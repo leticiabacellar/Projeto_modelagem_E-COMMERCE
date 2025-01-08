@@ -1,6 +1,6 @@
 # Projeto_modelagem_E-COMMERCE
 
-Modelagem de Banco de Dados para E-commerce
+💻 Modelagem de Banco de Dados para E-commerce
 
 Descrição do Projeto
 
@@ -8,10 +8,10 @@ Este projeto apresenta uma modelagem de banco de dados relacional para um sistem
 
 A modelagem foi realizada utilizando o MySQL Workbench, com foco em boas práticas de estruturação e normalização, atendendo aos principais requisitos funcionais de um sistema de e-commerce.
 
-Entidades Principais e Relacionamentos
+👩‍💻 Entidades Principais e Relacionamentos
 
 1. Cliente
-Dados: Nome, CPF/CNPJ, Contato, Endereço, E-mail, Data de Cadastro.
+Dados: Nome, Documento, Contato, Endereço, E-mail, Senha, Data de Cadastro.
 Relacionamento: Um cliente pode realizar múltiplos pedidos.
 
 2. Produto
@@ -23,7 +23,7 @@ Dados: Nome da Categoria.
 Relacionamento: Cada categoria pode ter vários produtos associados.
 
 4. Pedido
-Dados: Data do Pedido, Valor Total, Status do Pedido.
+Dados: Data do Pedido, Valor Total, Status do Pedido, Frete.
 Relacionamento: Um pedido é feito por um cliente e pode conter múltiplos produtos.
 
 5. ItemPedido
@@ -38,7 +38,7 @@ Relacionamento: Um pagamento está associado a um pedido.
 Dados: Transportadora, Código de Rastreamento, Datas de Envio e Entrega.
 Relacionamento: Está associada a um pedido específico.
 
-Características Técnicas
+📚 Características Técnicas
 
 Relacionamentos implementados com chaves estrangeiras para garantir integridade referencial.
 Uso do tipo ENUM no campo Status da tabela Pedido para padronizar valores (ex.: "Pendente", "Pago", "Cancelado").
@@ -56,12 +56,12 @@ Abra o MySQL Workbench e importe o arquivo SQL com a estrutura do banco de dados
 3. Use o Banco de Dados
 Utilize o banco para testes, simulações ou como base para desenvolvimento de sistemas de e-commerce.
 
-Tecnologias Utilizadas
+🔍 Tecnologias Utilizadas
 
 Ferramenta de Modelagem: MySQL Workbench
 Banco de Dados Relacional: MySQL
 
-Possíveis Melhorias Futuras
+❤️ Possíveis Melhorias Futuras
 
 Implementação de logs para auditoria de transações.
 Adicionar tabelas para cupons de desconto e devoluções.
